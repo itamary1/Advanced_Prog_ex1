@@ -22,7 +22,7 @@ float var(float *x, int size) {
         powSum += (*(x + i)) * (*(x + i));
     }
     float theAvg = avg(x, size);
-    return size == 0 ? 0 : ((powSum / (float) size) - pow(theAvg, (float) 2));
+    return size == 0 ? 0 : ((powSum / (float) size) - std::pow(theAvg, (float) 2));
 }
 
 // returns the covariance of X and Y
@@ -73,7 +73,7 @@ float dev(Point p, Point **points, int size) {
 // returns the deviation between point p and the line
 float dev(Point p, Line l) {
     float fx = (l.a*p.x) + l.b;
-    return abs(fx - p.y);
+    return std::abs(fx - p.y);
 }
 
 
