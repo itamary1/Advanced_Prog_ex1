@@ -97,7 +97,7 @@ float dev(Point p, Point **points, int size) {
 // returns the deviation between point p and the line
 float dev(Point p, Line l) {
     //calculate the f(x) parameter on the line for the point's x.
-    float fx = (l.a*p.x) + l.b;
+    float fx = l.f(p.x);
     //return the distance between the fx and point's y.
     return fabs(fx - p.y);
 }
