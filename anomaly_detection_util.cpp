@@ -1,7 +1,7 @@
 /*
  * animaly_detection_util.cpp
  *
- * Author: Itamar Twersky 311587489
+ * Author: Itamar Twersky 
  */
 
 #include <math.h>
